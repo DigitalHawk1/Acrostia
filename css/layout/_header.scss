@@ -1,0 +1,15 @@
+header {
+  @include flex-container;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+
+  .header-nav-link {
+    @include lato;
+    font-size: $MediumFZ;
+    padding: 40px 25px 16px;
+    margin: 0 5px;
+  }
+}

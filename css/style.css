@@ -4,6 +4,62 @@
   position: absolute;
   clear: both; }
 
+/* line 1, base/_generic-settings.scss */
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+/* line 6, base/_generic-settings.scss */
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
+/* line 11, base/_generic-settings.scss */
+body {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  font-size: 14px; }
+
+/* line 19, base/_generic-settings.scss */
+h1, h2, h3, h4, h5, h6 {
+  display: inline-block; }
+
+/* line 23, base/_generic-settings.scss */
+h1 {
+  font-size: 50px;
+  font-family: 'Damion', cursive;
+  margin: 0;
+  line-height: 38px; }
+
+/* line 30, base/_generic-settings.scss */
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff; }
+
+/* line 1, layout/_header.scss */
+header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px; }
+  /* line 9, layout/_header.scss */
+  header .header-nav-link {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 40px 25px 16px;
+    margin: 0 5px; }
+
 /* line 1, layout/_sticky-footer.scss */
 #site {
   display: flex;
@@ -12,5 +68,11 @@
   /* line 6, layout/_sticky-footer.scss */
   #site #site-content {
     flex: 1; }
+
+/* line 1, layout/_container.scss */
+.container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
