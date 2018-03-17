@@ -1,0 +1,16 @@
+/* line 1, helpers/_utilities.scss */
+.clearfix {
+  content: '';
+  position: absolute;
+  clear: both; }
+
+/* line 1, layout/_sticky-footer.scss */
+#site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+  /* line 6, layout/_sticky-footer.scss */
+  #site #site-content {
+    flex: 1; }
+
+/*# sourceMappingURL=style.css.map */

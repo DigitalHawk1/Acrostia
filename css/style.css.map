@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,SAAU;ECCR,OAAO,EAAE,EAAE;EACX,QAAQ,EAAE,QAAQ;EDAlB,KAAK,EAAE,IAAI;;;AEFb,KAAM;EACJ,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;EACjB,cAAc,EAAE,MAAM;;EAEtB,mBAAc;IACZ,IAAI,EAAE,CAAC",
+"sources": ["helpers/_utilities.scss","helpers/_mixins.scss","layout/_sticky-footer.scss"],
+"names": [],
+"file": "style.css"
+}

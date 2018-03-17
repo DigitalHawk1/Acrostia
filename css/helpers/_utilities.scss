@@ -1,0 +1,4 @@
+.clearfix {
+@include after-before;
+  clear: both;
+}
