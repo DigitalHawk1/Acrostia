@@ -51,8 +51,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 30px; }
-  /* line 9, layout/_header.scss */
+  padding: 30px;
+  z-index: 999999999999999999; }
+  /* line 10, layout/_header.scss */
   header .header-nav-link {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -74,5 +75,15 @@ header {
   width: 100%;
   max-width: 950px;
   margin: 0 auto; }
+
+/* line 1, sections/_home.scss */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+  /* line 5, sections/_home.scss */
+  #home .background-image {
+    width: 100%;
+    height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */

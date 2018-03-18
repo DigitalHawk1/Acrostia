@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Acrostia</title>
+    <link rel="import" href="./bower_components/awesome-slider/awesome-slider.html" />
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Damion|Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
 </head>
 <body id="site">
 
@@ -28,7 +32,14 @@
 <main id="site-content">
 
     <section id="home">
+        <awesome-slider autostart="true" bullets="true">
+                <item source="./img/hero.png"></item>
+                <item source="./img/hero2.jpg"></item>
+                <item source="./img/hero3.jpg"></item>
+        </awesome-slider>
+
         <div class="container">
+
             <div id="hero-text-wrapper">
 
             </div>
@@ -314,6 +325,5 @@
     </ul>
 
 </footer>
-
 </body>
 </html>
