@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/jquery-nav-scroll/jquery.navScroll.min.js"></script>
 </head>
 <body id="site">
@@ -22,11 +22,11 @@
     <h1>acrostia</h1>
 
     <nav id="header-nav">
-        <a class="header-nav-link hero" href="#hero">Home</a>
-        <a class="header-nav-link services" href="#services">Services</a>
-        <a class="header-nav-link about" href="#about">About</a>
-        <a class="header-nav-link work" href="#work">Work</a>
-        <a class="header-nav-link contacts" href="#contacts">Contacts</a>
+        <a class="header-nav-link hero" href="#hero" onclick="goToByScroll('hero')">Home</a>
+        <a class="header-nav-link services" href="#services" onclick="goToByScroll('services')">Services</a>
+        <a class="header-nav-link about" href="#about" onclick="goToByScroll('about')">About</a>
+        <a class="header-nav-link work" href="#work" onclick="goToByScroll('work')">Work</a>
+        <a class="header-nav-link contacts" href="#contacts" onclick="goToByScroll('contacts')">Contacts</a>
     </nav>
 
 </header>
@@ -35,8 +35,8 @@
 
     <section id="hero">
         <div id="hero-text-wrapper">
-            <div id="GIC">GOOD IDEAS<br> comes</div>
-            <div id="first">FIRST!</div>
+            <div id="GIC"><p class="uppercase">GOOD IDEAS</p> comes</div>
+            <div id="first" class="uppercase">FIRST!</div>
         </div>
 
         <awesome-slider autostart="true" bullets="true">
@@ -50,13 +50,14 @@
     <section id="services">
 
         <div class="container">
-            <h2>OUR SERVICES</h2>
+            <h2 class="uppercase">OUR SERVICES</h2>
 
-            <p>
-                Cras commodo mattis justo nec lobortis. Nam ut tellus lobortis, ullamcorper massa sit amet
+            <p id="subtitle">
+                Cras commodo mattis justo nec <a id="subtitle-link" href="">lobortis</a>. Nam ut tellus lobortis,
+                ullamcorper massa sit amet
             </p>
 
-            <p>
+            <p class="section-description">
                 Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
                 erat
                 rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante
@@ -65,7 +66,7 @@
             </p>
 
             <div>
-                <h3>RESEARCHING</h3>
+                <h3 class="uppercase">RESEARCHING</h3>
                 <P>
                     Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate
                     velit
@@ -73,7 +74,7 @@
                 </P>
             </div>
             <div>
-                <h3>DESIGN</h3>
+                <h3 class="uppercase">DESIGN</h3>
                 <p>
                     Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate
                     velit
@@ -81,7 +82,7 @@
                 </p>
             </div>
             <div>
-                <h3>DEVELOPMENT</h3>
+                <h3 class="uppercase">DEVELOPMENT</h3>
                 <p>
                     Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate
                     velit
@@ -89,7 +90,7 @@
                 </p>
             </div>
             <div>
-                <h3>LAUNCH</h3>
+                <h3 class="uppercase">LAUNCH</h3>
                 <p>
                     Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate
                     velit
@@ -103,9 +104,9 @@
     <section id="about">
 
         <div class="container">
-            <h2>Who we are & what we do</h2>
+            <h2 class="uppercase">Who we are & what we do</h2>
 
-            <p>
+            <p class="section-description">
                 Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
                 erat
                 rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante
@@ -113,7 +114,7 @@
                 justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
             </p>
 
-            <div id="mtt">MEET THE TEAM</div>
+            <div id="mtt" class="uppercase">MEET THE TEAM</div>
 
             <div class="team-rounded-rectangle">
                 <h4></h4>
@@ -194,9 +195,9 @@
     <section id="work">
 
         <div class="container">
-            <h2>OUR WORK</h2>
+            <h2 class="uppercase">OUR WORK</h2>
 
-            <p>
+            <p class="section-description">
                 Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
                 erat
                 rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante
@@ -205,7 +206,7 @@
             </p>
 
             <div>
-                <h5>PORTFOLIO</h5>
+                <h5 class="uppercase">PORTFOLIO</h5>
 
                 <nav id="gallery-filter-nav">
                     <a href="" class="gallery-filter-links">All</a>
@@ -250,15 +251,14 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="contact">
 
         <div class="container">
-            <h2>CONTACT US</h2>
+            <h2 class="uppercase">CONTACT US</h2>
 
-            <p>
+            <p class="section-description">
                 Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
                 erat
                 rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante
@@ -299,7 +299,7 @@
                     <input type="email" placeholder="Email">
                 </span>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Your question"></textarea>
-                    <button>SEND</button>
+                    <button class="uppercase">SEND</button>
                 </form>
             </div>
         </div>
