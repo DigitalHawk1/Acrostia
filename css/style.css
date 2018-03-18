@@ -76,14 +76,41 @@ header {
   max-width: 950px;
   margin: 0 auto; }
 
-/* line 1, sections/_home.scss */
-#home {
+/* line 1, sections/_hero.scss */
+#hero {
   position: relative;
   width: 100%;
   height: 100vh; }
-  /* line 5, sections/_home.scss */
-  #home .background-image {
-    width: 100%;
-    height: 100vh; }
+  /* line 6, sections/_hero.scss */
+  #hero #hero-text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 666666666666666666666666;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.3);
+    color: #74c7d5;
+    padding: 30px 65px 30px 40px;
+    border-radius: 5px; }
+
+/* line 18, sections/_hero.scss */
+#hero-text-wrapper #GIC {
+  text-align: right;
+  font-size: 36px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 44px; }
+/* line 24, sections/_hero.scss */
+#hero-text-wrapper #first {
+  font-size: 100px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  line-height: 80px; }
 
 /*# sourceMappingURL=style.css.map */
