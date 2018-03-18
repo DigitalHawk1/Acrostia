@@ -5,12 +5,33 @@ header {
   left: 0;
   right: 0;
   padding: 30px;
-  z-index: 999999999999999999;
+  z-index: 9999999999999999999999999999999999999999999999999999999999999999999;
 
   .header-nav-link {
     @include lato;
     font-size: $MediumFZ;
     padding: 40px 25px 16px;
     margin: 0 5px;
+    border-radius: 0 0 5px 5px;
   }
+}
+
+.header-nav-link.hero.active {
+  background: $heroClr;
+}
+
+.header-nav-link.services.active {
+  background: #df5c64;
+}
+
+.header-nav-link.about.active {
+  background: #91778e;
+}
+
+.header-nav-link.work.active {
+  background: #a1ca6c;
+}
+
+.header-nav-link.contacts.active {
+  background: $contactsNavAndPlaceholderAndFooterSocialBgClr;
 }
