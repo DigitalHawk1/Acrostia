@@ -1,0 +1,32 @@
+body {
+  color: #fff;
+  background: #000;
+  @include lato;
+  font-size: $bodyFZ
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Damion', cursive;
+  line-height: 38px;
+}
+
+h2 {
+  @include lato(300);
+  font-size: 60px;
+  line-height: 50px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section-description {
+  color: #ffcccf;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}

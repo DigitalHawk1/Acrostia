@@ -1,0 +1,55 @@
+#services {
+  background: #b24a50;
+  #subtitle {
+    font-size: $bigFZ;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  .section-description {
+    margin-bottom: 120px;
+  }
+}
+
+#subtitle #subtitle-link {
+  color: #ec9da2;
+}
+
+#services-wrapper {
+  @include flex-container(center);
+  .service {
+    width: 215px;
+    padding: 50px 25px 45px;
+    background-color: #c8535a;
+    margin: 10px;
+  }
+}
+
+.service {
+  h3 {
+    @include lato(300);
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 20px;
+  }
+  .service-description {
+    @include lato;
+    color: #fefefe;
+  }
+}
+
+.transparent-circle-with-border {
+  position: relative;
+  @include circle(140px);
+  background: transparent;
+  border: 5px solid #fff;
+  margin: 0 auto 35px;
+  .white-circle {
+    background: #fff;
+    @include circle(120px);
+    @include centering;
+    border: none;
+    img {
+      @include centering;
+    }
+  }
+}

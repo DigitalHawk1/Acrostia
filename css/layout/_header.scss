@@ -1,5 +1,5 @@
 header {
-  @include flex-container;
+  @include flex-container(space-between);
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@ header {
 
   .header-nav-link {
     @include lato;
-    font-size: $MediumFZ;
+    font-size: $mediumFZ;
     padding: 40px 25px 16px;
     margin: 0 5px;
     border-radius: 0 0 5px 5px;
