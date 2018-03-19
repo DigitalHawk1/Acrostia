@@ -1,0 +1,121 @@
+#about {
+  background: #665464;
+  #MTT {
+    @include lato(900);
+    font-size: 25px;
+    padding: 15px 40px;
+    background: #a1ca6c;
+    display: inline-block;
+    margin: 0 auto 70px;
+    border-radius: 5px;
+    position: relative;
+    &:after {
+      @include after-before;
+      bottom: -16px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 16px 16px 0 16px;
+      border-color: #a1ca6c transparent transparent transparent;
+    }
+  }
+}
+
+#team-wrapper {
+  @include flex-container(center);
+  .team-member-card {
+    background: rgba(77, 63, 75, .5);
+    width: 215px;
+    margin: 10px;
+    padding: 50px 25px 30px 25px;
+    border-radius: 5px;
+    transition: all .3s;
+  }
+}
+
+.team-member-circle {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  border: 5px solid #a1859e;
+  margin: 0 auto 30px;
+  transition: all .3s;
+  img {
+    padding-top: 10px;
+    transition: all .3s;
+  }
+  .hover-img {
+    padding-top: 10px;
+    display: none;
+    transition: all .3s;
+  }
+}
+
+.team-member-card {
+  h4{
+    @include lato(900);
+    font-size: 21px;
+    color: #c7b6c5;
+    margin-bottom: 15px;
+    transition: all .3s;
+  }
+  .position {
+    color: #a1ca6c;
+    @include lato;
+    margin-bottom: 40px;
+    transition: all .3s;
+  }
+  ul {
+    list-style: none;
+    .team-social-list-item {
+      @include circle(30px);
+      background: #a1859e;
+      transition: all .3s;
+      .fa {
+        line-height: 30px;
+      }
+    }
+    li {
+      float: left;
+      width: 30px;
+      margin: 0 5px;
+      &:after {
+        @include after-before;
+        clear: left;
+      }
+    }
+  }
+}
+
+.team-member-card:hover {
+  background: rgba(77, 63, 75, .8);
+  .team-member-circle {
+    border-color: $aboutSectionRed;
+    img {
+      display: none;
+    }
+    .hover-img {
+      display: inline-block;
+    }
+  }
+  h4 {
+    color: #fff;
+  }
+  .position {
+    color: #ff8973;
+  }
+  .team-social-list-item.fb {
+    background: #4f689e;
+  }
+  .team-social-list-item.twitter {
+    background: #74c7d5;
+  }
+  .team-social-list-item.google {
+    background: $aboutSectionRed;
+  }
+  .team-social-list-item.linkedin {
+    background: #3e61af;
+  }
+}

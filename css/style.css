@@ -10,41 +10,42 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-/* line 6, base/_generic-settings.scss */
+/* line 7, base/_generic-settings.scss */
 html, body {
   height: 100%;
   min-height: 100%;
 }
 
-/* line 11, base/_generic-settings.scss */
+/* line 12, base/_generic-settings.scss */
 body {
   position: relative;
   text-align: center;
 }
 
-/* line 16, base/_generic-settings.scss */
+/* line 17, base/_generic-settings.scss */
 h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-/* line 20, base/_generic-settings.scss */
+/* line 21, base/_generic-settings.scss */
 h1 {
   margin: 0;
 }
 
-/* line 24, base/_generic-settings.scss */
+/* line 25, base/_generic-settings.scss */
 h2 {
   margin-bottom: 35px;
 }
 
-/* line 28, base/_generic-settings.scss */
+/* line 29, base/_generic-settings.scss */
 section {
   padding: 190px 0 80px;
 }
 
-/* line 32, base/_generic-settings.scss */
+/* line 33, base/_generic-settings.scss */
 .section-description {
   margin-bottom: 60px;
 }
@@ -280,6 +281,165 @@ header .header-nav-link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* line 1, sections/_about.scss */
+#about {
+  background: #665464;
+}
+/* line 3, sections/_about.scss */
+#about #MTT {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  padding: 15px 40px;
+  background: #a1ca6c;
+  display: inline-block;
+  margin: 0 auto 70px;
+  border-radius: 5px;
+  position: relative;
+}
+/* line 12, sections/_about.scss */
+#about #MTT:after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: -16px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 16px 0 16px;
+  border-color: #a1ca6c transparent transparent transparent;
+}
+
+/* line 26, sections/_about.scss */
+#team-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 28, sections/_about.scss */
+#team-wrapper .team-member-card {
+  background: rgba(77, 63, 75, 0.5);
+  width: 215px;
+  margin: 10px;
+  padding: 50px 25px 30px 25px;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+/* line 38, sections/_about.scss */
+.team-member-circle {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  border: 5px solid #a1859e;
+  margin: 0 auto 30px;
+  transition: all .3s;
+}
+/* line 45, sections/_about.scss */
+.team-member-circle img {
+  padding-top: 10px;
+  transition: all .3s;
+}
+/* line 49, sections/_about.scss */
+.team-member-circle .hover-img {
+  padding-top: 10px;
+  display: none;
+  transition: all .3s;
+}
+
+/* line 57, sections/_about.scss */
+.team-member-card h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 21px;
+  color: #c7b6c5;
+  margin-bottom: 15px;
+  transition: all .3s;
+}
+/* line 64, sections/_about.scss */
+.team-member-card .position {
+  color: #a1ca6c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+  transition: all .3s;
+}
+/* line 70, sections/_about.scss */
+.team-member-card ul {
+  list-style: none;
+}
+/* line 72, sections/_about.scss */
+.team-member-card ul .team-social-list-item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #a1859e;
+  transition: all .3s;
+}
+/* line 76, sections/_about.scss */
+.team-member-card ul .team-social-list-item .fa {
+  line-height: 30px;
+}
+/* line 80, sections/_about.scss */
+.team-member-card ul li {
+  float: left;
+  width: 30px;
+  margin: 0 5px;
+}
+/* line 84, sections/_about.scss */
+.team-member-card ul li:after {
+  content: '';
+  position: absolute;
+  display: block;
+  clear: left;
+}
+
+/* line 92, sections/_about.scss */
+.team-member-card:hover {
+  background: rgba(77, 63, 75, 0.8);
+}
+/* line 94, sections/_about.scss */
+.team-member-card:hover .team-member-circle {
+  border-color: #df5c64;
+}
+/* line 96, sections/_about.scss */
+.team-member-card:hover .team-member-circle img {
+  display: none;
+}
+/* line 99, sections/_about.scss */
+.team-member-card:hover .team-member-circle .hover-img {
+  display: inline-block;
+}
+/* line 103, sections/_about.scss */
+.team-member-card:hover h4 {
+  color: #fff;
+}
+/* line 106, sections/_about.scss */
+.team-member-card:hover .position {
+  color: #ff8973;
+}
+/* line 109, sections/_about.scss */
+.team-member-card:hover .team-social-list-item.fb {
+  background: #4f689e;
+}
+/* line 112, sections/_about.scss */
+.team-member-card:hover .team-social-list-item.twitter {
+  background: #74c7d5;
+}
+/* line 115, sections/_about.scss */
+.team-member-card:hover .team-social-list-item.google {
+  background: #df5c64;
+}
+/* line 118, sections/_about.scss */
+.team-member-card:hover .team-social-list-item.linkedin {
+  background: #3e61af;
 }
 
 /*# sourceMappingURL=style.css.map */
