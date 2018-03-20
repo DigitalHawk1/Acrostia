@@ -6,11 +6,18 @@
 
 @mixin flex-container ($justify-content) {
   display: flex;
+  flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: $justify-content;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
+
+@mixin lato ($weight: 400) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $weight;
+}
+
 
 @mixin centering {
   position: absolute;
