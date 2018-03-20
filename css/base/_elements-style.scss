@@ -1,7 +1,7 @@
 body {
   color: #fff;
   background: #000;
-  @include lato;
+  font-family: 'Lato', sans-serif;
   font-size: $bodyFZ
 }
 
@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  @include lato(300);
+  font-weight: 300;
   font-size: 60px;
   line-height: 50px;
 }
