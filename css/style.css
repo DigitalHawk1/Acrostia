@@ -442,4 +442,71 @@ header .header-nav-link {
   background: #3e61af;
 }
 
+/* line 1, sections/_work.scss */
+#work {
+  background-color: #81a256;
+}
+/* line 3, sections/_work.scss */
+#work #portfolio-filter-links-wrapper {
+  border-top: 1px solid #94b963;
+  border-bottom: 1px solid #94b963;
+  height: 100px;
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 11, sections/_work.scss */
+#work #portfolio-filter-links-wrapper h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+/* line 15, sections/_work.scss */
+#work #portfolio-filter-links-wrapper .button {
+  padding: 15px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  transition: all .3s;
+  float: left;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* line 27, sections/_work.scss */
+#work #portfolio-filter-links-wrapper .button:hover, #work #portfolio-filter-links-wrapper .button.is-checked {
+  background-color: #f5c149;
+}
+/* line 32, sections/_work.scss */
+#work #grid-container {
+  display: grid;
+  grid-template-columns: 225px 225px 225px 225px;
+  grid-gap: 20px;
+}
+/* line 36, sections/_work.scss */
+#work #grid-container .grid-item {
+  width: 215px;
+  height: 205px;
+  background: #fff;
+  color: #727272;
+  border-radius: 5px;
+}
+/* line 42, sections/_work.scss */
+#work #grid-container .grid-item .grid-img {
+  width: 215px;
+  height: 165px;
+  border-radius: 5px 5px 0 0;
+}
+/* line 47, sections/_work.scss */
+#work #grid-container .grid-item p {
+  line-height: 50px;
+}
+
 /*# sourceMappingURL=style.css.map */

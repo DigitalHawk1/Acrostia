@@ -166,10 +166,10 @@
             <div id="team-wrapper">
                 <div class="team-member-card">
 
-                        <div class="team-member-circle">
-                            <img src="./img/team-member.png" alt="Team member photo">
-                            <img class="hover-img" src="./img/member-red.png" alt="Team member photo">
-                        </div>
+                    <div class="team-member-circle">
+                        <img src="./img/team-member.png" alt="Team member photo">
+                        <img class="hover-img" src="./img/member-red.png" alt="Team member photo">
+                    </div>
 
                     <h4 class="uppercase">Anton Petrov</h4>
 
@@ -202,10 +202,10 @@
 
                 <div class="team-member-card">
 
-                        <div class="team-member-circle">
-                            <img src="./img/team-member.png" alt="Team member photo">
-                            <img class="hover-img" src="./img/member-red.png" alt="Team member photo">
-                        </div>
+                    <div class="team-member-circle">
+                        <img src="./img/team-member.png" alt="Team member photo">
+                        <img class="hover-img" src="./img/member-red.png" alt="Team member photo">
+                    </div>
 
                     <h4 class="uppercase">Kirl DONCHEV</h4>
 
@@ -238,10 +238,10 @@
 
                 <div class="team-member-card">
 
-                        <div class="team-member-circle">
-                            <img src="./img/team-member.png" alt="Team member photo">
-                            <img class="hover-img" src="./img/member-red.png" alt="Team member photo">
-                        </div>
+                    <div class="team-member-circle">
+                        <img src="./img/team-member.png" alt="Team member photo">
+                        <img class="hover-img" src="./img/member-red.png" alt="Team member photo">
+                    </div>
 
                     <h4 class="uppercase">Ilian Bonev</h4>
 
@@ -274,10 +274,10 @@
 
                 <div class="team-member-card">
 
-                        <div class="team-member-circle">
-                            <img src="./img/team-member.png" alt="Team member photo">
-                            <img class="hover-img" src="./img/member-red.png" alt="Team member photo">
-                        </div>
+                    <div class="team-member-circle">
+                        <img src="./img/team-member.png" alt="Team member photo">
+                        <img class="hover-img" src="./img/member-red.png" alt="Team member photo">
+                    </div>
 
                     <h4 class="uppercase">Doni Stamov</h4>
 
@@ -327,49 +327,49 @@
                 justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
             </p>
 
-            <div>
+            <div id="portfolio-filter-links-wrapper">
                 <h5 class="uppercase">PORTFOLIO</h5>
 
-                <nav id="gallery-filter-nav">
-                    <a href="" class="gallery-filter-links">All</a>
-                    <a href="" class="gallery-filter-links">Photography</a>
-                    <a href="" class="gallery-filter-links">Logo design</a>
-                    <a href="" class="gallery-filter-links">Web design</a>
-                </nav>
+                <div class="filters-button-group">
+                    <button class="button is-checked" data-filter="all">All</button>
+                    <button class="button" data-filter="photography">Photography</button>
+                    <button class="button" data-filter="logo">Logo design</button>
+                    <button class="button" data-filter="web">Web design</button>
+                </div>
             </div>
 
             <div id="grid-container">
-                <div class="grid-item">
-                    <img class="grid-img" src="" alt="">
-
+                <div class="grid-item all logo">
+                    <img class="grid-img" src="./img/logo1.png" alt="Logo design">
+                    <p class="uppercase">Aenean a elit</p>
                 </div>
-                <div class="grid-item">
-                    <img class="grid-img" src="" alt="">
-
+                <div class="grid-item all web">
+                    <img class="grid-img" src="./img/web-design.png" alt="Web design">
+                    <p class="uppercase">Aliquam</p>
                 </div>
-                <div class="grid-item">
-                    <img class="grid-img" src="" alt="">
-
+                <div class="grid-item all photography">
+                    <img class="grid-img" src="./img/photography1.png" alt="Photography">
+                    <p class="uppercase">Suspendisse libero</p>
                 </div>
-                <div class="grid-item">
-                    <img class="grid-img" src="" alt="">
-
+                <div class="grid-item all web">
+                    <img class="grid-img" src="./img/website2.png" alt="Web design">
+                    <p class="uppercase">Maecenas fringilla</p>
                 </div>
-                <div class="grid-item">
-                    <img class="grid-img" src="" alt="">
-
+                <div class="grid-item all photography">
+                    <img class="grid-img" src="./img/photography2.png" alt="Photography">
+                    <p class="uppercase">Donec vehicula</p>
                 </div>
-                <div class="grid-item">
-                    <img class="grid-img" src="" alt="">
-
+                <div class="grid-item all logo">
+                    <img class="grid-img" src="./img/logo2.png" alt="Logo design">
+                    <p class="uppercase">Ut et sapien</p>
                 </div>
-                <div class="grid-item">
-                    <img class="grid-img" src="" alt="">
-
+                <div class="grid-item all photography">
+                    <img class="grid-img" src="./img/photography3.png" alt="Photography">
+                    <p class="uppercase">quis malesuada</p>
                 </div>
-                <div class="grid-item">
-                    <img class="grid-img" src="" alt="">
-
+                <div class="grid-item all logo">
+                    <img class="grid-img" src="./img/logo3.png" alt="Logo design">
+                    <p class="uppercase">Vestibulum ante</p>
                 </div>
             </div>
         </div>
@@ -450,5 +450,6 @@
 </footer>
 
 <script src="./js/nav-scroll.js"></script>
+<script src="./js/gallery-filter.js"></script>
 </body>
 </html>
