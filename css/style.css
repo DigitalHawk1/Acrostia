@@ -1,7 +1,6 @@
 /* line 1, helpers/_utilities.scss */
 .clearfix {
   content: '';
-  position: absolute;
   display: block;
   clear: both;
 }
@@ -236,9 +235,10 @@ header .header-nav-link {
   padding: 50px 25px 45px;
   background-color: #c8535a;
   margin: 10px;
+  border-radius: 5px;
 }
 
-/* line 28, sections/_services.scss */
+/* line 29, sections/_services.scss */
 .service h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -246,14 +246,14 @@ header .header-nav-link {
   margin-bottom: 50px;
   line-height: 20px;
 }
-/* line 34, sections/_services.scss */
+/* line 35, sections/_services.scss */
 .service .service-description {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: #fefefe;
 }
 
-/* line 40, sections/_services.scss */
+/* line 41, sections/_services.scss */
 .transparent-circle-with-border {
   position: relative;
   width: 140px;
@@ -263,7 +263,7 @@ header .header-nav-link {
   border: 5px solid #fff;
   margin: 0 auto 35px;
 }
-/* line 46, sections/_services.scss */
+/* line 47, sections/_services.scss */
 .transparent-circle-with-border .white-circle {
   background: #fff;
   width: 120px;
@@ -275,7 +275,7 @@ header .header-nav-link {
   transform: translate(-50%, -50%);
   border: none;
 }
-/* line 51, sections/_services.scss */
+/* line 52, sections/_services.scss */
 .transparent-circle-with-border .white-circle img {
   position: absolute;
   top: 50%;
@@ -302,8 +302,8 @@ header .header-nav-link {
 /* line 12, sections/_about.scss */
 #about #MTT:after {
   content: '';
-  position: absolute;
   display: block;
+  position: absolute;
   bottom: -16px;
   left: 50%;
   transform: translate(-50%);
@@ -314,7 +314,7 @@ header .header-nav-link {
   border-color: #a1ca6c transparent transparent transparent;
 }
 
-/* line 26, sections/_about.scss */
+/* line 27, sections/_about.scss */
 #team-wrapper {
   display: flex;
   flex-direction: row;
@@ -323,7 +323,7 @@ header .header-nav-link {
   justify-content: center;
   flex-wrap: wrap;
 }
-/* line 28, sections/_about.scss */
+/* line 29, sections/_about.scss */
 #team-wrapper .team-member-card {
   background: rgba(77, 63, 75, 0.5);
   width: 215px;
@@ -333,7 +333,7 @@ header .header-nav-link {
   transition: all .3s;
 }
 
-/* line 38, sections/_about.scss */
+/* line 39, sections/_about.scss */
 .team-member-circle {
   position: relative;
   background: #fff;
@@ -342,19 +342,19 @@ header .header-nav-link {
   margin: 0 auto 30px;
   transition: all .3s;
 }
-/* line 45, sections/_about.scss */
+/* line 46, sections/_about.scss */
 .team-member-circle img {
   padding-top: 10px;
   transition: all .3s;
 }
-/* line 49, sections/_about.scss */
+/* line 50, sections/_about.scss */
 .team-member-circle .hover-img {
   padding-top: 10px;
   display: none;
   transition: all .3s;
 }
 
-/* line 57, sections/_about.scss */
+/* line 58, sections/_about.scss */
 .team-member-card h4 {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
@@ -363,7 +363,7 @@ header .header-nav-link {
   margin-bottom: 15px;
   transition: all .3s;
 }
-/* line 64, sections/_about.scss */
+/* line 65, sections/_about.scss */
 .team-member-card .position {
   color: #a1ca6c;
   font-family: 'Lato', sans-serif;
@@ -371,11 +371,11 @@ header .header-nav-link {
   margin-bottom: 40px;
   transition: all .3s;
 }
-/* line 70, sections/_about.scss */
+/* line 71, sections/_about.scss */
 .team-member-card ul {
   list-style: none;
 }
-/* line 72, sections/_about.scss */
+/* line 73, sections/_about.scss */
 .team-member-card ul .team-social-list-item {
   width: 30px;
   height: 30px;
@@ -383,61 +383,60 @@ header .header-nav-link {
   background: #a1859e;
   transition: all .3s;
 }
-/* line 76, sections/_about.scss */
+/* line 77, sections/_about.scss */
 .team-member-card ul .team-social-list-item .fa {
   line-height: 30px;
 }
-/* line 80, sections/_about.scss */
+/* line 81, sections/_about.scss */
 .team-member-card ul li {
   float: left;
   width: 30px;
   margin: 0 5px;
 }
-/* line 84, sections/_about.scss */
+/* line 85, sections/_about.scss */
 .team-member-card ul li:after {
   content: '';
-  position: absolute;
   display: block;
   clear: left;
 }
 
-/* line 92, sections/_about.scss */
+/* line 93, sections/_about.scss */
 .team-member-card:hover {
   background: rgba(77, 63, 75, 0.8);
 }
-/* line 94, sections/_about.scss */
+/* line 95, sections/_about.scss */
 .team-member-card:hover .team-member-circle {
   border-color: #df5c64;
 }
-/* line 96, sections/_about.scss */
+/* line 97, sections/_about.scss */
 .team-member-card:hover .team-member-circle img {
   display: none;
 }
-/* line 99, sections/_about.scss */
+/* line 100, sections/_about.scss */
 .team-member-card:hover .team-member-circle .hover-img {
   display: inline-block;
 }
-/* line 103, sections/_about.scss */
+/* line 104, sections/_about.scss */
 .team-member-card:hover h4 {
   color: #fff;
 }
-/* line 106, sections/_about.scss */
+/* line 107, sections/_about.scss */
 .team-member-card:hover .position {
   color: #ff8973;
 }
-/* line 109, sections/_about.scss */
+/* line 110, sections/_about.scss */
 .team-member-card:hover .team-social-list-item.fb {
   background: #4f689e;
 }
-/* line 112, sections/_about.scss */
+/* line 113, sections/_about.scss */
 .team-member-card:hover .team-social-list-item.twitter {
   background: #74c7d5;
 }
-/* line 115, sections/_about.scss */
+/* line 116, sections/_about.scss */
 .team-member-card:hover .team-social-list-item.google {
   background: #df5c64;
 }
-/* line 118, sections/_about.scss */
+/* line 119, sections/_about.scss */
 .team-member-card:hover .team-social-list-item.linkedin {
   background: #3e61af;
 }
@@ -507,6 +506,85 @@ header .header-nav-link {
 /* line 47, sections/_work.scss */
 #work #grid-container .grid-item p {
   line-height: 50px;
+}
+
+/* line 1, sections/_contacts.scss */
+#contact-us {
+  background-color: #75b4aa;
+}
+/* line 3, sections/_contacts.scss */
+#contact-us .section-description {
+  margin-bottom: 120px;
+}
+
+/* line 8, sections/_contacts.scss */
+#contacts-map-form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 11, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper {
+  width: 50%;
+  text-align: left;
+}
+/* line 14, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper h6 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+/* line 19, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper #inputs-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+/* line 22, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input {
+  width: 48%;
+  height: 40px;
+  background-color: #68a097;
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #82c8bd;
+}
+/* line 33, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper textarea {
+  width: 100%;
+  height: 160px;
+  background-color: #68a097;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+  resize: none;
+  color: #82c8bd;
+  margin-bottom: 30px;
+}
+/* line 45, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper button.uppercase {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50px;
+  box-shadow: inset 0 -4px 0 rgba(178, 74, 80, 0.5);
+  background-color: #df5c64;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=style.css.map */
