@@ -37,9 +37,9 @@
 }
 
 .team-member-circle {
+  @include circle(165px);
   position: relative;
   background: #fff;
-  border-radius: 50%;
   border: 5px solid #a1859e;
   margin: 0 auto 30px;
   transition: all .3s;
@@ -75,6 +75,7 @@
       background: #a1859e;
       transition: all .3s;
       .fa {
+        cursor: pointer;
         line-height: 30px;
       }
     }
@@ -107,16 +108,18 @@
   .position {
     color: #ff8973;
   }
-  .team-social-list-item.fb {
-    background: #4f689e;
-  }
-  .team-social-list-item.twitter {
-    background: #74c7d5;
-  }
-  .team-social-list-item.google {
-    background: $aboutSectionRed;
-  }
-  .team-social-list-item.linkedin {
-    background: #3e61af;
+  .team-social-list-item{
+    &.fb {
+      background: #4f689e;
+    }
+    &.twitter {
+      background: #74c7d5;
+    }
+    &.google {
+      background: $aboutSectionRed;
+    }
+    &.linkedin {
+      background: #3e61af;
+    }
   }
 }

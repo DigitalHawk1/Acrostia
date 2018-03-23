@@ -1,0 +1,37 @@
+footer {
+  background: $contactsFormAndFooter;
+  padding: 40px 0 50px 0;
+  @include flex-container(center, nowrap);
+  ul {
+    list-style: none;
+    .footer-social-list-item {
+      @include circle(40px);
+      background: $contactsNavAndPlaceholderAndFooterSocialBgClr;
+      cursor: pointer;
+      transition: all .3s;
+      .fa {
+        line-height: 40px;
+      }
+      &.fb:hover {
+        background: #4f689e;
+      }
+      &.twitter:hover {
+        background: #74c7d5;
+      }
+      &.google:hover {
+        background: $aboutSectionRed;
+      }
+      &.linkedin:hover {
+        background: #3e61af;
+      }
+    }
+    li {
+      float: left;
+      margin: 0 20px;
+      &:after {
+        @include after-before;
+        clear: left;
+      }
+    }
+  }
+}

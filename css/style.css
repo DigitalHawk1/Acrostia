@@ -151,6 +151,62 @@ header .header-nav-link {
   flex: 1;
 }
 
+/* line 1, layout/_footer.scss */
+footer {
+  background: #68a097;
+  padding: 40px 0 50px 0;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+/* line 5, layout/_footer.scss */
+footer ul {
+  list-style: none;
+}
+/* line 7, layout/_footer.scss */
+footer ul .footer-social-list-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #82c8bd;
+  cursor: pointer;
+  transition: all .3s;
+}
+/* line 12, layout/_footer.scss */
+footer ul .footer-social-list-item .fa {
+  line-height: 40px;
+}
+/* line 15, layout/_footer.scss */
+footer ul .footer-social-list-item.fb:hover {
+  background: #4f689e;
+}
+/* line 18, layout/_footer.scss */
+footer ul .footer-social-list-item.twitter:hover {
+  background: #74c7d5;
+}
+/* line 21, layout/_footer.scss */
+footer ul .footer-social-list-item.google:hover {
+  background: #df5c64;
+}
+/* line 24, layout/_footer.scss */
+footer ul .footer-social-list-item.linkedin:hover {
+  background: #3e61af;
+}
+/* line 28, layout/_footer.scss */
+footer ul li {
+  float: left;
+  margin: 0 20px;
+}
+/* line 31, layout/_footer.scss */
+footer ul li:after {
+  content: '';
+  display: block;
+  clear: left;
+}
+
 /* line 1, layout/_container.scss */
 .container {
   width: 100%;
@@ -335,9 +391,11 @@ header .header-nav-link {
 
 /* line 39, sections/_about.scss */
 .team-member-circle {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
   position: relative;
   background: #fff;
-  border-radius: 50%;
   border: 5px solid #a1859e;
   margin: 0 auto 30px;
   transition: all .3s;
@@ -385,58 +443,59 @@ header .header-nav-link {
 }
 /* line 77, sections/_about.scss */
 .team-member-card ul .team-social-list-item .fa {
+  cursor: pointer;
   line-height: 30px;
 }
-/* line 81, sections/_about.scss */
+/* line 82, sections/_about.scss */
 .team-member-card ul li {
   float: left;
   width: 30px;
   margin: 0 5px;
 }
-/* line 85, sections/_about.scss */
+/* line 86, sections/_about.scss */
 .team-member-card ul li:after {
   content: '';
   display: block;
   clear: left;
 }
 
-/* line 93, sections/_about.scss */
+/* line 94, sections/_about.scss */
 .team-member-card:hover {
   background: rgba(77, 63, 75, 0.8);
 }
-/* line 95, sections/_about.scss */
+/* line 96, sections/_about.scss */
 .team-member-card:hover .team-member-circle {
   border-color: #df5c64;
 }
-/* line 97, sections/_about.scss */
+/* line 98, sections/_about.scss */
 .team-member-card:hover .team-member-circle img {
   display: none;
 }
-/* line 100, sections/_about.scss */
+/* line 101, sections/_about.scss */
 .team-member-card:hover .team-member-circle .hover-img {
   display: inline-block;
 }
-/* line 104, sections/_about.scss */
+/* line 105, sections/_about.scss */
 .team-member-card:hover h4 {
   color: #fff;
 }
-/* line 107, sections/_about.scss */
+/* line 108, sections/_about.scss */
 .team-member-card:hover .position {
   color: #ff8973;
 }
-/* line 110, sections/_about.scss */
+/* line 112, sections/_about.scss */
 .team-member-card:hover .team-social-list-item.fb {
   background: #4f689e;
 }
-/* line 113, sections/_about.scss */
+/* line 115, sections/_about.scss */
 .team-member-card:hover .team-social-list-item.twitter {
   background: #74c7d5;
 }
-/* line 116, sections/_about.scss */
+/* line 118, sections/_about.scss */
 .team-member-card:hover .team-social-list-item.google {
   background: #df5c64;
 }
-/* line 119, sections/_about.scss */
+/* line 121, sections/_about.scss */
 .team-member-card:hover .team-social-list-item.linkedin {
   background: #3e61af;
 }
