@@ -516,8 +516,15 @@ header .header-nav-link {
 #contact-us .section-description {
   margin-bottom: 120px;
 }
+/* line 6, sections/_contacts.scss */
+#contact-us h6 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 20px;
+}
 
-/* line 8, sections/_contacts.scss */
+/* line 14, sections/_contacts.scss */
 #contacts-map-form-wrapper {
   width: 100%;
   display: flex;
@@ -525,44 +532,62 @@ header .header-nav-link {
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
-/* line 11, sections/_contacts.scss */
+/* line 17, sections/_contacts.scss */
 #contacts-map-form-wrapper #form-wrapper {
   width: 50%;
   text-align: left;
 }
-/* line 14, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper h6 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-/* line 19, sections/_contacts.scss */
+/* line 20, sections/_contacts.scss */
 #contacts-map-form-wrapper #form-wrapper #inputs-wrapper {
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 35px;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
 }
-/* line 22, sections/_contacts.scss */
+/* line 23, sections/_contacts.scss */
 #contacts-map-form-wrapper #form-wrapper #inputs-wrapper input {
   width: 48%;
-  height: 40px;
+  height: 30px;
   background-color: #68a097;
   border: none;
   border-radius: 5px;
   padding: 0 20px;
   font-size: 16px;
   color: #82c8bd;
+  transition: all .3s;
+  /* FF 4-18 */
+  /* FF 19+ */
+  /* IE 10+ */
 }
 /* line 33, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus {
+  background: #fff;
+}
+/* line 36, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 39, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus:-moz-placeholder {
+  color: transparent;
+}
+/* line 43, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus::-moz-placeholder {
+  color: transparent;
+}
+/* line 47, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* line 53, sections/_contacts.scss */
 #contacts-map-form-wrapper #form-wrapper textarea {
   width: 100%;
-  height: 160px;
+  height: 130px;
   background-color: #68a097;
   border: none;
   border-radius: 5px;
@@ -571,8 +596,32 @@ header .header-nav-link {
   resize: none;
   color: #82c8bd;
   margin-bottom: 30px;
+  transition: all .3s;
+  /* FF 4-18 */
+  /* FF 19+ */
+  /* IE 10+ */
 }
-/* line 45, sections/_contacts.scss */
+/* line 65, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper textarea:focus {
+  background: #fff;
+}
+/* line 68, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 71, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+/* line 75, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+/* line 79, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* line 84, sections/_contacts.scss */
 #contacts-map-form-wrapper #form-wrapper button.uppercase {
   display: block;
   margin: 0 auto;
@@ -585,6 +634,75 @@ header .header-nav-link {
   color: #fff;
   font-size: 26px;
   font-weight: 900;
+  cursor: pointer;
+  transition: all .3s;
+}
+/* line 98, sections/_contacts.scss */
+#contacts-map-form-wrapper #form-wrapper button.uppercase:hover {
+  background: #ff1529;
+}
+/* line 103, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper {
+  width: 25%;
+  padding-bottom: 19px;
+}
+/* line 106, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper #contacts-wrapper {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+/* line 111, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper #contacts-wrapper h6 {
+  margin-bottom: 20px;
+}
+/* line 114, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper #contacts-wrapper #brand-text {
+  color: #c0dfda;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+/* line 120, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper #contacts-wrapper address {
+  font-style: normal;
+}
+/* line 122, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper #contacts-wrapper address #address {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/* line 126, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper #contacts-wrapper address #contacts {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 20px;
+}
+/* line 129, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper #contacts-wrapper address #contacts span {
+  color: #d0efea;
+}
+/* line 132, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper #contacts-wrapper address #contacts span:last-of-type {
+  color: #fff;
+}
+/* line 134, sections/_contacts.scss */
+#contacts-map-form-wrapper #contacts-and-map-wrapper #contacts-wrapper address #contacts span:last-of-type #email {
+  text-decoration: underline;
+}
+/* line 142, sections/_contacts.scss */
+#contacts-map-form-wrapper #map {
+  width: 25%;
+  height: 180px;
+  background: #000;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 0 50px 35px 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

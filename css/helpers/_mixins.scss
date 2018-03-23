@@ -3,13 +3,13 @@
   display: block;
 }
 
-@mixin flex-container ($justify-content) {
+@mixin flex-container ($justify-content, $wrap) {
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: $justify-content;
-  flex-wrap: wrap;
+  flex-wrap: $wrap;
 }
 
 @mixin lato ($weight: 400) {

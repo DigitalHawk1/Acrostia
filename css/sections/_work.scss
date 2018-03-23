@@ -7,7 +7,7 @@
     width: 100%;
     padding-left: 20px;
     margin-bottom: 45px;
-    @include flex-container(space-between);
+    @include flex-container(space-between, wrap);
     h5 {
       font-size: $bigFZ;
       font-weight: 700;

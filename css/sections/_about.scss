@@ -25,7 +25,7 @@
 }
 
 #team-wrapper {
-  @include flex-container(center);
+  @include flex-container(center, wrap);
   .team-member-card {
     background: rgba(77, 63, 75, .5);
     width: 215px;

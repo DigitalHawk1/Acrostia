@@ -3,36 +3,56 @@
   .section-description {
     margin-bottom: 120px;
   }
+  h6 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 20px;
+  }
 }
 
 #contacts-map-form-wrapper {
   width: 100%;
-  @include flex-container(space-between);
+  @include flex-container(space-between, nowrap);
   #form-wrapper {
     width: 50%;
     text-align: left;
-    h6 {
-      font-size: 30px;
-      font-weight: 700;
-      margin-bottom: 25px;
-    }
     #inputs-wrapper {
-      @include flex-container(space-between);
-      margin-bottom: 35px;
+      @include flex-container(space-between, nowrap);
+      margin-bottom: 20px;
       input {
         width: 48%;
-        height: 40px;
+        height: 30px;
         background-color: #68a097;
         border: none;
         border-radius: 5px;
         padding: 0 20px;
         font-size: 16px;
         color: $contactsNavAndPlaceholderAndFooterSocialBgClr;
+        transition: all .3s;
+        &:focus {
+          background: #fff;
+        }
+        &:focus::-webkit-input-placeholder {
+          color: transparent;
+        }
+        &:focus:-moz-placeholder {
+          color: transparent;
+        }
+        /* FF 4-18 */
+        &:focus::-moz-placeholder {
+          color: transparent;
+        }
+        /* FF 19+ */
+        &:focus:-ms-input-placeholder {
+          color: transparent;
+        }
+        /* IE 10+ */
       }
     }
     textarea {
       width: 100%;
-      height: 160px;
+      height: 130px;
       background-color: #68a097;
       border: none;
       border-radius: 5px;
@@ -41,6 +61,25 @@
       resize: none;
       color: $contactsNavAndPlaceholderAndFooterSocialBgClr;
       margin-bottom: 30px;
+      transition: all .3s;
+      &:focus {
+        background: #fff;
+      }
+      &:focus::-webkit-input-placeholder {
+        color: transparent;
+      }
+      &:focus:-moz-placeholder {
+        color: transparent;
+      }
+      /* FF 4-18 */
+      &:focus::-moz-placeholder {
+        color: transparent;
+      }
+      /* FF 19+ */
+      &:focus:-ms-input-placeholder {
+        color: transparent;
+      }
+      /* IE 10+ */
     }
     button.uppercase {
       display: block;
@@ -54,6 +93,58 @@
       color: #fff;
       font-size: 26px;
       font-weight: 900;
+      cursor: pointer;
+      transition: all .3s;
+      &:hover {
+        background: #ff1529;
+      }
     }
+  }
+  #contacts-and-map-wrapper {
+    width: 25%;
+    padding-bottom: 19px;
+    #contacts-wrapper {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 50px;
+      h6 {
+        margin-bottom: 20px;
+      }
+      #brand-text {
+        color: #c0dfda;
+        font-size: $bigFZ;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      address {
+        font-style: normal;
+        #address {
+          font-size: $smallFZ;
+          margin-bottom: 10px;
+        }
+        #contacts {
+          @include flex-container(space-between, wrap);
+          line-height: 20px;
+          span {
+            color: #d0efea;
+          }
+          span:last-of-type {
+            color: #fff;
+            #email {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  #map {
+    width: 25%;
+    height: 180px;
+    background: #000;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 50px 35px 40px;
   }
 }

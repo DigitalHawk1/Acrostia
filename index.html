@@ -14,6 +14,10 @@
     <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/jquery-nav-scroll/jquery.navScroll.min.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiJfMpiyBPD1IefhnZJkqS4WVRdDuVerY&callback=initMap">
+    </script>
+
 </head>
 <body id="site">
 
@@ -390,27 +394,38 @@
 
             <div id="contacts-map-form-wrapper">
                 <div id="contacts-and-map-wrapper">
-                    <h6>Address</h6>
+                    <div id="contacts-wrapper">
+                        <h6>Address</h6>
 
-                    <p id="brand-text">
-                        Acrostia
-                    </p>
+                        <p id="brand-text">
+                            Acrostia
+                        </p>
 
-                    <p id="address">
-                        Sevenoaks Rd <br>
-                        Sevenoaks TN14 7HR, UK
-                    </p>
+                        <address>
+                            <p id="address">
+                                Sevenoaks Rd <br>
+                                Sevenoaks TN14 7HR, UK
+                            </p>
 
-                    <p id="contacts">
-                        Phone: +44 555 555 555 <br>
-                        Fax: +44 556 555 555 <br>
-                        E-mail: info@acrostia.com <br>
-                        Skype: Ac0stia
-                    </p>
-
-                    <div id="map"></div>
-
+                            <p id="contacts">
+                                <span>
+                                    Phone: <br>
+                                    Fax: <br>
+                                    E-mail: <br>
+                                    Skype:
+                                </span>
+                                <span>
+                                    <a href="tel:+44 555 555 555">+44 555 555 555</a> <br>
+                                    +44 556 555 555 <br>
+                                    <a id="email" href="mailto:info@acrostia.com">info@acrostia.com</a><br>
+                                    <a href="skype:Ac0stia">Ac0stia</a>
+                                </span>
+                            </p>
+                        </address>
+                    </div>
                 </div>
+
+                <div id="map"></div>
 
                 <div id="form-wrapper">
 
@@ -453,5 +468,6 @@
 
 <script src="./js/nav-scroll.js"></script>
 <script src="./js/gallery-filter.js"></script>
+<script src="./js/google-map.js"></script>
 </body>
 </html>

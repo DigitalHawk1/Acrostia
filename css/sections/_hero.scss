@@ -7,7 +7,7 @@
   #hero-text-wrapper {
     @include centering;
     z-index: 66;
-    @include flex-container(center);
+    @include flex-container(center, wrap);
     background: rgba(255, 255, 255, .3);
     color: $heroClr;
     padding: 30px 65px 30px 40px;

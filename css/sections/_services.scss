@@ -15,7 +15,7 @@
 }
 
 #services-wrapper {
-  @include flex-container(center);
+  @include flex-container(center, wrap);
   .service {
     width: 215px;
     padding: 50px 25px 45px;

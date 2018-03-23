@@ -1,5 +1,5 @@
 header {
-  @include flex-container(space-between);
+  @include flex-container(space-between, wrap);
   position: fixed;
   top: 0;
   left: 0;
