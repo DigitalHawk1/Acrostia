@@ -11,12 +11,13 @@
     <link href="https://fonts.googleapis.com/css?family=Damion|Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
-    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.5/webcomponents.min.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/jquery-nav-scroll/jquery.navScroll.min.js"></script>
+    <script src="./node_modules/active-scroll/dist/active-scroll.min.js"></script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiJfMpiyBPD1IefhnZJkqS4WVRdDuVerY&callback=initMap">
     </script>
+
 
 </head>
 <body id="site">
@@ -26,11 +27,11 @@
     <h1>acrostia</h1>
 
     <nav id="header-nav">
-        <a class="header-nav-link hero" href="#hero" onclick="goToByScroll('hero')">Home</a>
-        <a class="header-nav-link services" href="#services" onclick="goToByScroll('services')">Services</a>
-        <a class="header-nav-link about" href="#about" onclick="goToByScroll('about')">About</a>
-        <a class="header-nav-link work" href="#work" onclick="goToByScroll('work')">Work</a>
-        <a class="header-nav-link contacts" href="#contacts" onclick="goToByScroll('contact-us')">Contacts</a>
+        <a class="header-nav-link hero" href="#hero" data-scroll="hero">Home</a>
+        <a class="header-nav-link services" href="#services" data-scroll="services">Services</a>
+        <a class="header-nav-link about" href="#about" data-scroll="about">About</a>
+        <a class="header-nav-link work" href="#work" data-scroll="work">Work</a>
+        <a class="header-nav-link contact-us" href="#contact-us" data-scroll="contact-us">Contacts</a>
     </nav>
 
 </header>
@@ -343,38 +344,58 @@
             </div>
 
             <div id="grid-container">
-                <div class="grid-item all logo">
-                    <img class="grid-img" src="./img/logo1.png" alt="Logo design">
-                    <p class="uppercase">Aenean a elit</p>
-                </div>
-                <div class="grid-item all web">
-                    <img class="grid-img" src="./img/web-design.png" alt="Web design">
-                    <p class="uppercase">Aliquam</p>
-                </div>
-                <div class="grid-item all photography">
-                    <img class="grid-img" src="./img/photography1.png" alt="Photography">
-                    <p class="uppercase">Suspendisse libero</p>
-                </div>
-                <div class="grid-item all web">
-                    <img class="grid-img" src="./img/website2.png" alt="Web design">
-                    <p class="uppercase">Maecenas fringilla</p>
-                </div>
-                <div class="grid-item all photography">
-                    <img class="grid-img" src="./img/photography2.png" alt="Photography">
-                    <p class="uppercase">Donec vehicula</p>
-                </div>
-                <div class="grid-item all logo">
-                    <img class="grid-img" src="./img/logo2.png" alt="Logo design">
-                    <p class="uppercase">Ut et sapien</p>
-                </div>
-                <div class="grid-item all photography">
-                    <img class="grid-img" src="./img/photography3.png" alt="Photography">
-                    <p class="uppercase">quis malesuada</p>
-                </div>
-                <div class="grid-item all logo">
-                    <img class="grid-img" src="./img/logo3.png" alt="Logo design">
-                    <p class="uppercase">Vestibulum ante</p>
-                </div>
+                <a href="./img/logo1.png">
+                    <div class="grid-item all logo">
+                        <img class="grid-img" src="./img/logo1.png" alt="Logo design">
+                        <p class="uppercase">Aenean a elit</p>
+                    </div>
+                </a>
+                <a href="./img/web-design.png">
+                    <div class="grid-item all web">
+                        <img class="grid-img" src="./img/web-design.png"
+                             alt="Web design">
+                        <p class="uppercase">Aliquam</p>
+                    </div>
+                </a>
+                <a href="./img/photography1.png">
+                    <div class="grid-item all photography">
+                        <img class="grid-img" src="./img/photography1.png"
+                             alt="Photography">
+                        <p class="uppercase">Suspendisse libero</p>
+                    </div>
+                </a>
+                <a href="./img/website2.png">
+                    <div class="grid-item all web">
+                        <img class="grid-img" src="./img/website2.png" alt="Web design">
+                        <p class="uppercase">Maecenas fringilla</p>
+                    </div>
+                </a>
+                <a href="./img/photography2.png">
+                    <div class="grid-item all photography">
+                        <img class="grid-img" src="./img/photography2.png"
+                             alt="Photography">
+                        <p class="uppercase">Donec vehicula</p>
+                    </div>
+                </a>
+                <a href="./img/logo2.png">
+                    <div class="grid-item all logo">
+                        <img class="grid-img" src="./img/logo2.png" alt="Logo design">
+                        <p class="uppercase">Ut et sapien</p>
+                    </div>
+                </a>
+                <a href="./img/photography3.png">
+                    <div class="grid-item all photography">
+                        <img class="grid-img" src="./img/photography3.png"
+                             alt="Photography">
+                        <p class="uppercase">quis malesuada</p>
+                    </div>
+                </a>
+                <a href="./img/logo3.png">
+                    <div class="grid-item all logo">
+                        <img class="grid-img" src="./img/logo3.png" alt="Logo design">
+                        <p class="uppercase">Vestibulum ante</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>

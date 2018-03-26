@@ -6,6 +6,7 @@ header {
   right: 0;
   padding: 30px;
   z-index: 9999999999999999999999999999999999999999999999999999999999999999999;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #2c3e50 100%);
 
   .header-nav-link {
     @include lato;
@@ -32,6 +33,6 @@ header {
   background: #a1ca6c;
 }
 
-.header-nav-link.contacts.active {
+.header-nav-link.contact-us.active {
   background: $contactsNavAndPlaceholderAndFooterSocialBgClr;
 }

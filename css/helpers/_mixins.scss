@@ -1,5 +1,5 @@
-@mixin after-before {
-  content: '';
+@mixin after-before ($content) {
+  content: $content;
   display: block;
 }
 

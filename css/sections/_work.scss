@@ -39,6 +39,43 @@
       background: #fff;
       color: #727272;
       border-radius: 5px;
+      position: relative;
+
+      &::before {
+        @include after-before('+');
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(61, 77, 41, .7);
+        color: #fff;
+        font-size: 24px;
+        line-height: 165px;
+        width: 215px;
+        height: 165px;
+        border-radius: 5px 5px 0 0;
+        opacity: 0;
+        cursor: pointer;
+        transition: all .3s;
+      }
+      &::after {
+        @include after-before('');
+        @include circle(50px);
+        background: transparent;
+        border: 1px solid #fff;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        cursor: pointer;
+        transition: all .3s;
+      }
+      &:hover::before {
+        opacity: 1;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
       .grid-img {
         width: 215px;
         height: 165px;

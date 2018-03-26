@@ -29,7 +29,7 @@ footer {
       float: left;
       margin: 0 20px;
       &:after {
-        @include after-before;
+        @include after-before('');
         clear: left;
       }
     }

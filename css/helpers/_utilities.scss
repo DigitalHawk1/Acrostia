@@ -1,4 +1,4 @@
 .clearfix {
-@include after-before;
+@include after-before('');
   clear: both;
 }

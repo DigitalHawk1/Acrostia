@@ -10,7 +10,7 @@
     border-radius: 5px;
     position: relative;
     &:after {
-      @include after-before;
+      @include after-before('');
       position: absolute;
       bottom: -16px;
       left: 50%;
@@ -84,7 +84,7 @@
       width: 30px;
       margin: 0 5px;
       &:after {
-        @include after-before;
+        @include after-before('');
         clear: left;
       }
     }
