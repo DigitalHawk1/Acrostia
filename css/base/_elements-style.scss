@@ -9,12 +9,29 @@ h1 {
   font-size: 50px;
   font-family: 'Damion', cursive;
   line-height: 38px;
+  @media screen and (max-width: 830px){
+    font-size: 35px;
+    line-height: 25px;
+  }
+  @media screen and (max-width: 550px) {
+    display: inline-block;
+    float: left;
+    padding-bottom: 15px;
+    &:after{
+      @include after-before('');
+      clear: both;
+    }
+  }
 }
 
 h2 {
   @include lato(300);
   font-size: 60px;
   line-height: 50px;
+  @media screen and (max-width: 445px){
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .uppercase {

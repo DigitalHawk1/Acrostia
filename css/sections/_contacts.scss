@@ -14,9 +14,16 @@
 #contacts-map-form-wrapper {
   width: 100%;
   @include flex-container(space-between, nowrap);
+  @media screen and (max-width: 815px) {
+    flex-wrap: wrap;
+  }
   #form-wrapper {
     width: 50%;
+    margin: 0 auto;
     text-align: left;
+    @media screen and (max-width: 815px) {
+      width: 80%;
+    }
     #inputs-wrapper {
       @include flex-container(space-between, nowrap);
       margin-bottom: 20px;
@@ -100,40 +107,47 @@
       }
     }
   }
-  #contacts-and-map-wrapper {
+  #contacts-wrapper {
     width: 25%;
     padding-bottom: 19px;
-    #contacts-wrapper {
-      display: inline-block;
-      width: 100%;
-      text-align: left;
-      margin-bottom: 50px;
-      h6 {
-        margin-bottom: 20px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 50px;
+    @media screen and (max-width: 635px) {
+      width: 32%;
+    }
+    @media screen and (max-width: 495px) {
+      width: 45%;
+      margin: 0 auto 50px;
+    }
+    @media screen and (max-width: 350px) {
+      width: 80%;
+    }
+    h6 {
+      margin-bottom: 20px;
+    }
+    #brand-text {
+      color: #c0dfda;
+      font-size: $bigFZ;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    address {
+      font-style: normal;
+      #address {
+        font-size: $smallFZ;
+        margin-bottom: 10px;
       }
-      #brand-text {
-        color: #c0dfda;
-        font-size: $bigFZ;
-        font-weight: 700;
-        margin-bottom: 30px;
-      }
-      address {
-        font-style: normal;
-        #address {
-          font-size: $smallFZ;
-          margin-bottom: 10px;
+      #contacts {
+        @include flex-container(space-between, wrap);
+        line-height: 20px;
+        span {
+          color: #d0efea;
         }
-        #contacts {
-          @include flex-container(space-between, wrap);
-          line-height: 20px;
-          span {
-            color: #d0efea;
-          }
-          span:last-of-type {
-            color: #fff;
-            #email {
-              text-decoration: underline;
-            }
+        span:last-of-type {
+          color: #fff;
+          #email {
+            text-decoration: underline;
           }
         }
       }
@@ -146,5 +160,12 @@
     display: inline-block;
     border-radius: 5px;
     margin: 0 50px 35px 40px;
+    @media screen and (max-width: 815px) {
+      width: 35%;
+    }
+    @media screen and (max-width: 495px) {
+      width: 80%;
+      height: 50vh;
+    }
   }
 }

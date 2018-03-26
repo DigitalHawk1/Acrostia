@@ -26,12 +26,13 @@
 
     <h1>acrostia</h1>
 
-    <nav id="header-nav">
+    <nav id="header-nav" class="top-nav">
         <a class="header-nav-link hero" href="#hero" data-scroll="hero">Home</a>
         <a class="header-nav-link services" href="#services" data-scroll="services">Services</a>
         <a class="header-nav-link about" href="#about" data-scroll="about">About</a>
         <a class="header-nav-link work" href="#work" data-scroll="work">Work</a>
         <a class="header-nav-link contact-us" href="#contact-us" data-scroll="contact-us">Contacts</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
 
 </header>
@@ -414,7 +415,6 @@
             </p>
 
             <div id="contacts-map-form-wrapper">
-                <div id="contacts-and-map-wrapper">
                     <div id="contacts-wrapper">
                         <h6>Address</h6>
 
@@ -444,7 +444,6 @@
                             </p>
                         </address>
                     </div>
-                </div>
 
                 <div id="map"></div>
 
@@ -498,5 +497,6 @@
 <script src="./js/nav-scroll.js"></script>
 <script src="./js/gallery-filter.js"></script>
 <script src="./js/google-map.js"></script>
+<script src="./js/responsive-nav.js"></script>
 </body>
 </html>

@@ -8,9 +8,19 @@
     padding-left: 20px;
     margin-bottom: 45px;
     @include flex-container(space-between, wrap);
+    @media screen and (max-width: 385px) {
+      display: block;
+      padding: 15px 0 0 5px;
+    }
     h5 {
       font-size: $bigFZ;
       font-weight: 700;
+      @media screen and (max-width: 470px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 385px) {
+        margin-bottom: 15px;
+      }
     }
     .button {
       padding: 15px;
@@ -24,15 +34,20 @@
       font-size: 16px;
       font-weight: 700;
       cursor: pointer;
+      @media screen and (max-width: 620px) {
+        margin: 0 1px;
+        padding: 5px;
+      }
+      @media screen and (max-width: 470px) {
+        font-size: 12px;
+      }
       &:hover, &.is-checked {
         background-color: #f5c149;
       }
     }
   }
   #grid-container {
-    display: grid;
-    grid-template-columns: 225px 225px 225px 225px;
-    grid-gap: 20px;
+    @include flex-container(center, wrap);
     .grid-item {
       width: 215px;
       height: 205px;
@@ -40,7 +55,7 @@
       color: #727272;
       border-radius: 5px;
       position: relative;
-
+      margin: 10px;
       &::before {
         @include after-before('+');
         position: absolute;

@@ -32,6 +32,9 @@ footer {
         @include after-before('');
         clear: left;
       }
+      @media screen and (max-width: 325px) {
+        margin: 0 10px;
+      }
     }
   }
 }

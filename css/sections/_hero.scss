@@ -7,24 +7,54 @@
   #hero-text-wrapper {
     @include centering;
     z-index: 66;
-    @include flex-container(center, wrap);
+    @include flex-container(center, no-wrap);
     background: rgba(255, 255, 255, .3);
     color: $heroClr;
     padding: 30px 65px 30px 40px;
     border-radius: 5px;
+    @media screen and (max-width: 1270px){
+      padding: 30px 0 30px 5px;
+    }
+    @media screen and (max-width: 1070px){
+      padding: 5px 0 5px 5px;
+    }
   }
 }
 
 #hero-text-wrapper{
-  #GIC{
+  #GIC {
     text-align: right;
     font-size: 36px;
     @include lato(300);
     line-height: 44px;
+    @media screen and (max-width: 1070px) {
+      font-size: 25px;
+      line-height: 25px;
+    }
+    @media screen and (max-width: 690px) {
+      font-size: 15px;
+      line-height: 15px;
+    }
+    @media screen and (max-width: 410px){
+      font-size: 7px;
+      line-height: 7px;
+    }
   }
   #first {
     font-size: 100px;
     @include lato(900);
     line-height: 80px;
+    @media screen and (max-width: 1070px){
+      font-size: 60px;
+      line-height: 50px;
+    }
+    @media screen and (max-width: 690px){
+      font-size: 35px;
+      line-height: 30px;
+    }
+    @media screen and (max-width: 410px){
+      font-size: 17px;
+      line-height: 17px;
+    }
   }
 }
