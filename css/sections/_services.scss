@@ -1,6 +1,6 @@
 #services {
   background: #b24a50;
-  #subtitle {
+  .subtitle {
     font-size: $bigFZ;
     text-transform: uppercase;
     margin-bottom: 22px;
@@ -10,11 +10,11 @@
   }
 }
 
-#subtitle #subtitle-link {
+.subtitle .subtitle-link {
   color: #ec9da2;
 }
 
-#services-wrapper {
+.services-wrapper {
   @include flex-container(center, wrap);
   .service {
     width: 215px;

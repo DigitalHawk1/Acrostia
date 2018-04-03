@@ -4,7 +4,7 @@
   height: 100vh;
   padding: 0;
 
-  #hero-text-wrapper {
+  .hero-text-wrapper {
     @include centering;
     z-index: 66;
     @include flex-container(center, no-wrap);
@@ -21,7 +21,7 @@
   }
 }
 
-#hero-text-wrapper{
+.hero-text-wrapper{
   #GIC {
     text-align: right;
     font-size: 36px;

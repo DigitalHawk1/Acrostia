@@ -1,6 +1,6 @@
 #work {
   background-color: #81a256;
-  #portfolio-filter-links-wrapper {
+  .portfolio-filter-links-wrapper {
     border-top: 1px solid #94b963;
     border-bottom: 1px solid #94b963;
     height: 100px;
@@ -46,7 +46,7 @@
       }
     }
   }
-  #grid-container {
+  .grid-container {
     @include flex-container(center, wrap);
     .grid-item {
       width: 215px;

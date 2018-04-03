@@ -10,15 +10,6 @@
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Damion|Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.5/webcomponents.min.js"></script>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/active-scroll/dist/active-scroll.min.js"></script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiJfMpiyBPD1IefhnZJkqS4WVRdDuVerY&callback=initMap">
-    </script>
-
-
 </head>
 <body id="site">
 
@@ -40,7 +31,7 @@
 <main id="site-content">
 
     <section id="hero">
-        <div id="hero-text-wrapper">
+        <div class="hero-text-wrapper">
             <div id="GIC"><p class="uppercase">GOOD IDEAS</p> comes</div>
             <div id="first" class="uppercase">FIRST!</div>
         </div>
@@ -58,8 +49,8 @@
         <div class="container">
             <h2 class="uppercase">OUR SERVICES</h2>
 
-            <p id="subtitle">
-                Cras commodo mattis justo nec <a id="subtitle-link" href="">lobortis</a>. Nam ut tellus lobortis,
+            <p class="subtitle">
+                Cras commodo mattis justo nec <a class="subtitle-link" href="">lobortis</a>. Nam ut tellus lobortis,
                 ullamcorper massa sit amet
             </p>
 
@@ -71,7 +62,7 @@
                 justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
             </p>
 
-            <div id="services-wrapper">
+            <div class="services-wrapper">
 
                 <div class="service">
 
@@ -165,11 +156,11 @@
                 justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
             </p>
 
-            <div id="MTT" class="uppercase">
+            <div class="MTT uppercase">
                 MEET THE TEAM
             </div>
 
-            <div id="team-wrapper">
+            <div class="team-wrapper">
                 <div class="team-member-card">
 
                     <div class="team-member-circle">
@@ -333,7 +324,7 @@
                 justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
             </p>
 
-            <div id="portfolio-filter-links-wrapper">
+            <div class="portfolio-filter-links-wrapper">
                 <h5 class="uppercase">PORTFOLIO</h5>
 
                 <div class="filters-button-group">
@@ -344,7 +335,7 @@
                 </div>
             </div>
 
-            <div id="grid-container">
+            <div class="grid-container">
                 <a href="./img/logo1.png">
                     <div class="grid-item all logo">
                         <img class="grid-img" src="./img/logo1.png" alt="Logo design">
@@ -414,49 +405,49 @@
                 justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
             </p>
 
-            <div id="contacts-map-form-wrapper">
-                    <div id="contacts-wrapper">
-                        <h6>Address</h6>
+            <div class="contacts-map-form-wrapper">
+                <div class="contacts-wrapper">
+                    <h6>Address</h6>
 
-                        <p id="brand-text">
-                            Acrostia
+                    <p class="brand-text">
+                        Acrostia
+                    </p>
+
+                    <address>
+                        <p class="address">
+                            Sevenoaks Rd <br>
+                            Sevenoaks TN14 7HR, UK
                         </p>
 
-                        <address>
-                            <p id="address">
-                                Sevenoaks Rd <br>
-                                Sevenoaks TN14 7HR, UK
-                            </p>
-
-                            <p id="contacts">
+                        <p class="contacts">
                                 <span>
                                     Phone: <br>
                                     Fax: <br>
                                     E-mail: <br>
                                     Skype:
                                 </span>
-                                <span>
+                            <span>
                                     <a href="tel:+44 555 555 555">+44 555 555 555</a> <br>
                                     +44 556 555 555 <br>
                                     <a id="email" href="mailto:info@acrostia.com">info@acrostia.com</a><br>
                                     <a href="skype:Ac0stia">Ac0stia</a>
                                 </span>
-                            </p>
-                        </address>
-                    </div>
+                        </p>
+                    </address>
+                </div>
 
-                <div id="map"></div>
+                <div class="map"></div>
 
-                <div id="form-wrapper">
+                <div class="form-wrapper">
 
                     <h6>Ask a question</h6>
 
                     <form action="">
-                <span id="inputs-wrapper">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                </span>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your question"></textarea>
+                        <span class="inputs-wrapper">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                        </span>
+                        <textarea placeholder="Your question"></textarea>
                         <button class="uppercase">SEND</button>
                     </form>
                 </div>
@@ -493,7 +484,12 @@
     </ul>
 
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.5/webcomponents.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/active-scroll/dist/active-scroll.min.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiJfMpiyBPD1IefhnZJkqS4WVRdDuVerY&callback=initMap">
+</script>
 <script src="./js/nav-scroll.js"></script>
 <script src="./js/gallery-filter.js"></script>
 <script src="./js/google-map.js"></script>

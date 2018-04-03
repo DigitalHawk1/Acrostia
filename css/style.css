@@ -342,7 +342,7 @@ footer ul li:after {
   padding: 0;
 }
 /* line 7, sections/_hero.scss */
-#hero #hero-text-wrapper {
+#hero .hero-text-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -361,19 +361,19 @@ footer ul li:after {
 }
 @media screen and (max-width: 1270px) {
   /* line 7, sections/_hero.scss */
-  #hero #hero-text-wrapper {
+  #hero .hero-text-wrapper {
     padding: 30px 0 30px 5px;
   }
 }
 @media screen and (max-width: 1070px) {
   /* line 7, sections/_hero.scss */
-  #hero #hero-text-wrapper {
+  #hero .hero-text-wrapper {
     padding: 5px 0 5px 5px;
   }
 }
 
 /* line 25, sections/_hero.scss */
-#hero-text-wrapper #GIC {
+.hero-text-wrapper #GIC {
   text-align: right;
   font-size: 36px;
   font-family: 'Lato', sans-serif;
@@ -382,27 +382,27 @@ footer ul li:after {
 }
 @media screen and (max-width: 1070px) {
   /* line 25, sections/_hero.scss */
-  #hero-text-wrapper #GIC {
+  .hero-text-wrapper #GIC {
     font-size: 25px;
     line-height: 25px;
   }
 }
 @media screen and (max-width: 690px) {
   /* line 25, sections/_hero.scss */
-  #hero-text-wrapper #GIC {
+  .hero-text-wrapper #GIC {
     font-size: 15px;
     line-height: 15px;
   }
 }
 @media screen and (max-width: 410px) {
   /* line 25, sections/_hero.scss */
-  #hero-text-wrapper #GIC {
+  .hero-text-wrapper #GIC {
     font-size: 7px;
     line-height: 7px;
   }
 }
 /* line 43, sections/_hero.scss */
-#hero-text-wrapper #first {
+.hero-text-wrapper #first {
   font-size: 100px;
   font-family: 'Lato', sans-serif;
   font-weight: 900;
@@ -410,21 +410,21 @@ footer ul li:after {
 }
 @media screen and (max-width: 1070px) {
   /* line 43, sections/_hero.scss */
-  #hero-text-wrapper #first {
+  .hero-text-wrapper #first {
     font-size: 60px;
     line-height: 50px;
   }
 }
 @media screen and (max-width: 690px) {
   /* line 43, sections/_hero.scss */
-  #hero-text-wrapper #first {
+  .hero-text-wrapper #first {
     font-size: 35px;
     line-height: 30px;
   }
 }
 @media screen and (max-width: 410px) {
   /* line 43, sections/_hero.scss */
-  #hero-text-wrapper #first {
+  .hero-text-wrapper #first {
     font-size: 17px;
     line-height: 17px;
   }
@@ -435,7 +435,7 @@ footer ul li:after {
   background: #b24a50;
 }
 /* line 3, sections/_services.scss */
-#services #subtitle {
+#services .subtitle {
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 22px;
@@ -446,12 +446,12 @@ footer ul li:after {
 }
 
 /* line 13, sections/_services.scss */
-#subtitle #subtitle-link {
+.subtitle .subtitle-link {
   color: #ec9da2;
 }
 
 /* line 17, sections/_services.scss */
-#services-wrapper {
+.services-wrapper {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -460,7 +460,7 @@ footer ul li:after {
   flex-wrap: wrap;
 }
 /* line 19, sections/_services.scss */
-#services-wrapper .service {
+.services-wrapper .service {
   width: 215px;
   padding: 50px 25px 45px;
   background-color: #c8535a;
@@ -518,7 +518,7 @@ footer ul li:after {
   background: #665464;
 }
 /* line 3, sections/_about.scss */
-#about #MTT {
+#about .MTT {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 25px;
@@ -530,7 +530,7 @@ footer ul li:after {
   position: relative;
 }
 /* line 12, sections/_about.scss */
-#about #MTT:after {
+#about .MTT:after {
   content: "";
   display: block;
   position: absolute;
@@ -545,7 +545,7 @@ footer ul li:after {
 }
 
 /* line 27, sections/_about.scss */
-#team-wrapper {
+.team-wrapper {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -554,7 +554,7 @@ footer ul li:after {
   flex-wrap: wrap;
 }
 /* line 29, sections/_about.scss */
-#team-wrapper .team-member-card {
+.team-wrapper .team-member-card {
   background: rgba(77, 63, 75, 0.5);
   width: 215px;
   margin: 10px;
@@ -679,7 +679,7 @@ footer ul li:after {
   background-color: #81a256;
 }
 /* line 3, sections/_work.scss */
-#work #portfolio-filter-links-wrapper {
+#work .portfolio-filter-links-wrapper {
   border-top: 1px solid #94b963;
   border-bottom: 1px solid #94b963;
   height: 100px;
@@ -695,30 +695,30 @@ footer ul li:after {
 }
 @media screen and (max-width: 385px) {
   /* line 3, sections/_work.scss */
-  #work #portfolio-filter-links-wrapper {
+  #work .portfolio-filter-links-wrapper {
     display: block;
     padding: 15px 0 0 5px;
   }
 }
 /* line 15, sections/_work.scss */
-#work #portfolio-filter-links-wrapper h5 {
+#work .portfolio-filter-links-wrapper h5 {
   font-size: 20px;
   font-weight: 700;
 }
 @media screen and (max-width: 470px) {
   /* line 15, sections/_work.scss */
-  #work #portfolio-filter-links-wrapper h5 {
+  #work .portfolio-filter-links-wrapper h5 {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 385px) {
   /* line 15, sections/_work.scss */
-  #work #portfolio-filter-links-wrapper h5 {
+  #work .portfolio-filter-links-wrapper h5 {
     margin-bottom: 15px;
   }
 }
 /* line 25, sections/_work.scss */
-#work #portfolio-filter-links-wrapper .button {
+#work .portfolio-filter-links-wrapper .button {
   padding: 15px;
   margin: 0 10px;
   border: none;
@@ -733,23 +733,23 @@ footer ul li:after {
 }
 @media screen and (max-width: 620px) {
   /* line 25, sections/_work.scss */
-  #work #portfolio-filter-links-wrapper .button {
+  #work .portfolio-filter-links-wrapper .button {
     margin: 0 1px;
     padding: 5px;
   }
 }
 @media screen and (max-width: 470px) {
   /* line 25, sections/_work.scss */
-  #work #portfolio-filter-links-wrapper .button {
+  #work .portfolio-filter-links-wrapper .button {
     font-size: 12px;
   }
 }
 /* line 44, sections/_work.scss */
-#work #portfolio-filter-links-wrapper .button:hover, #work #portfolio-filter-links-wrapper .button.is-checked {
+#work .portfolio-filter-links-wrapper .button:hover, #work .portfolio-filter-links-wrapper .button.is-checked {
   background-color: #f5c149;
 }
 /* line 49, sections/_work.scss */
-#work #grid-container {
+#work .grid-container {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -758,7 +758,7 @@ footer ul li:after {
   flex-wrap: wrap;
 }
 /* line 51, sections/_work.scss */
-#work #grid-container .grid-item {
+#work .grid-container .grid-item {
   width: 215px;
   height: 205px;
   background: #fff;
@@ -768,7 +768,7 @@ footer ul li:after {
   margin: 10px;
 }
 /* line 59, sections/_work.scss */
-#work #grid-container .grid-item::before {
+#work .grid-container .grid-item::before {
   content: "+";
   display: block;
   position: absolute;
@@ -786,7 +786,7 @@ footer ul li:after {
   transition: all .3s;
 }
 /* line 75, sections/_work.scss */
-#work #grid-container .grid-item::after {
+#work .grid-container .grid-item::after {
   content: "";
   display: block;
   width: 50px;
@@ -803,21 +803,21 @@ footer ul li:after {
   transition: all .3s;
 }
 /* line 88, sections/_work.scss */
-#work #grid-container .grid-item:hover::before {
+#work .grid-container .grid-item:hover::before {
   opacity: 1;
 }
 /* line 91, sections/_work.scss */
-#work #grid-container .grid-item:hover::after {
+#work .grid-container .grid-item:hover::after {
   opacity: 1;
 }
 /* line 94, sections/_work.scss */
-#work #grid-container .grid-item .grid-img {
+#work .grid-container .grid-item .grid-img {
   width: 215px;
   height: 165px;
   border-radius: 5px 5px 0 0;
 }
 /* line 99, sections/_work.scss */
-#work #grid-container .grid-item p {
+#work .grid-container .grid-item p {
   line-height: 50px;
 }
 
@@ -838,7 +838,7 @@ footer ul li:after {
 }
 
 /* line 14, sections/_contacts.scss */
-#contacts-map-form-wrapper {
+.contacts-map-form-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -849,24 +849,24 @@ footer ul li:after {
 }
 @media screen and (max-width: 815px) {
   /* line 14, sections/_contacts.scss */
-  #contacts-map-form-wrapper {
+  .contacts-map-form-wrapper {
     flex-wrap: wrap;
   }
 }
 /* line 20, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper {
+.contacts-map-form-wrapper .form-wrapper {
   width: 50%;
   margin: 0 auto;
   text-align: left;
 }
 @media screen and (max-width: 815px) {
   /* line 20, sections/_contacts.scss */
-  #contacts-map-form-wrapper #form-wrapper {
+  .contacts-map-form-wrapper .form-wrapper {
     width: 80%;
   }
 }
 /* line 27, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper #inputs-wrapper {
+.contacts-map-form-wrapper .form-wrapper .inputs-wrapper {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -876,7 +876,7 @@ footer ul li:after {
   margin-bottom: 20px;
 }
 /* line 30, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input {
+.contacts-map-form-wrapper .form-wrapper .inputs-wrapper input {
   width: 48%;
   height: 30px;
   background-color: #68a097;
@@ -891,27 +891,27 @@ footer ul li:after {
   /* IE 10+ */
 }
 /* line 40, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus {
+.contacts-map-form-wrapper .form-wrapper .inputs-wrapper input:focus {
   background: #fff;
 }
 /* line 43, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus::-webkit-input-placeholder {
+.contacts-map-form-wrapper .form-wrapper .inputs-wrapper input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 /* line 46, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus:-moz-placeholder {
+.contacts-map-form-wrapper .form-wrapper .inputs-wrapper input:focus:-moz-placeholder {
   color: transparent;
 }
 /* line 50, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus::-moz-placeholder {
+.contacts-map-form-wrapper .form-wrapper .inputs-wrapper input:focus::-moz-placeholder {
   color: transparent;
 }
 /* line 54, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper #inputs-wrapper input:focus:-ms-input-placeholder {
+.contacts-map-form-wrapper .form-wrapper .inputs-wrapper input:focus:-ms-input-placeholder {
   color: transparent;
 }
 /* line 60, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper textarea {
+.contacts-map-form-wrapper .form-wrapper textarea {
   width: 100%;
   height: 130px;
   background-color: #68a097;
@@ -928,27 +928,27 @@ footer ul li:after {
   /* IE 10+ */
 }
 /* line 72, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper textarea:focus {
+.contacts-map-form-wrapper .form-wrapper textarea:focus {
   background: #fff;
 }
 /* line 75, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper textarea:focus::-webkit-input-placeholder {
+.contacts-map-form-wrapper .form-wrapper textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 /* line 78, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper textarea:focus:-moz-placeholder {
+.contacts-map-form-wrapper .form-wrapper textarea:focus:-moz-placeholder {
   color: transparent;
 }
 /* line 82, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper textarea:focus::-moz-placeholder {
+.contacts-map-form-wrapper .form-wrapper textarea:focus::-moz-placeholder {
   color: transparent;
 }
 /* line 86, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper textarea:focus:-ms-input-placeholder {
+.contacts-map-form-wrapper .form-wrapper textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 /* line 91, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper button.uppercase {
+.contacts-map-form-wrapper .form-wrapper button.uppercase {
   display: block;
   margin: 0 auto;
   width: 50%;
@@ -964,11 +964,11 @@ footer ul li:after {
   transition: all .3s;
 }
 /* line 105, sections/_contacts.scss */
-#contacts-map-form-wrapper #form-wrapper button.uppercase:hover {
+.contacts-map-form-wrapper .form-wrapper button.uppercase:hover {
   background: #ff1529;
 }
 /* line 110, sections/_contacts.scss */
-#contacts-map-form-wrapper #contacts-wrapper {
+.contacts-map-form-wrapper .contacts-wrapper {
   width: 25%;
   padding-bottom: 19px;
   display: inline-block;
@@ -977,45 +977,45 @@ footer ul li:after {
 }
 @media screen and (max-width: 635px) {
   /* line 110, sections/_contacts.scss */
-  #contacts-map-form-wrapper #contacts-wrapper {
+  .contacts-map-form-wrapper .contacts-wrapper {
     width: 32%;
   }
 }
 @media screen and (max-width: 495px) {
   /* line 110, sections/_contacts.scss */
-  #contacts-map-form-wrapper #contacts-wrapper {
+  .contacts-map-form-wrapper .contacts-wrapper {
     width: 45%;
     margin: 0 auto 50px;
   }
 }
 @media screen and (max-width: 350px) {
   /* line 110, sections/_contacts.scss */
-  #contacts-map-form-wrapper #contacts-wrapper {
+  .contacts-map-form-wrapper .contacts-wrapper {
     width: 80%;
   }
 }
 /* line 126, sections/_contacts.scss */
-#contacts-map-form-wrapper #contacts-wrapper h6 {
+.contacts-map-form-wrapper .contacts-wrapper h6 {
   margin-bottom: 20px;
 }
 /* line 129, sections/_contacts.scss */
-#contacts-map-form-wrapper #contacts-wrapper #brand-text {
+.contacts-map-form-wrapper .contacts-wrapper .brand-text {
   color: #c0dfda;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
 }
 /* line 135, sections/_contacts.scss */
-#contacts-map-form-wrapper #contacts-wrapper address {
+.contacts-map-form-wrapper .contacts-wrapper address {
   font-style: normal;
 }
 /* line 137, sections/_contacts.scss */
-#contacts-map-form-wrapper #contacts-wrapper address #address {
+.contacts-map-form-wrapper .contacts-wrapper address .address {
   font-size: 16px;
   margin-bottom: 10px;
 }
 /* line 141, sections/_contacts.scss */
-#contacts-map-form-wrapper #contacts-wrapper address #contacts {
+.contacts-map-form-wrapper .contacts-wrapper address .contacts {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -1025,19 +1025,19 @@ footer ul li:after {
   line-height: 20px;
 }
 /* line 144, sections/_contacts.scss */
-#contacts-map-form-wrapper #contacts-wrapper address #contacts span {
+.contacts-map-form-wrapper .contacts-wrapper address .contacts span {
   color: #d0efea;
 }
 /* line 147, sections/_contacts.scss */
-#contacts-map-form-wrapper #contacts-wrapper address #contacts span:last-of-type {
+.contacts-map-form-wrapper .contacts-wrapper address .contacts span:last-of-type {
   color: #fff;
 }
 /* line 149, sections/_contacts.scss */
-#contacts-map-form-wrapper #contacts-wrapper address #contacts span:last-of-type #email {
+.contacts-map-form-wrapper .contacts-wrapper address .contacts span:last-of-type .email {
   text-decoration: underline;
 }
 /* line 156, sections/_contacts.scss */
-#contacts-map-form-wrapper #map {
+.contacts-map-form-wrapper .map {
   width: 25%;
   height: 180px;
   background: #000;
@@ -1047,13 +1047,13 @@ footer ul li:after {
 }
 @media screen and (max-width: 815px) {
   /* line 156, sections/_contacts.scss */
-  #contacts-map-form-wrapper #map {
+  .contacts-map-form-wrapper .map {
     width: 35%;
   }
 }
 @media screen and (max-width: 495px) {
   /* line 156, sections/_contacts.scss */
-  #contacts-map-form-wrapper #map {
+  .contacts-map-form-wrapper .map {
     width: 80%;
     height: 50vh;
   }

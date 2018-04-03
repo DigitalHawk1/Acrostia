@@ -1,6 +1,6 @@
 #about {
   background: #665464;
-  #MTT {
+  .MTT {
     @include lato(900);
     font-size: 25px;
     padding: 15px 40px;
@@ -24,7 +24,7 @@
   }
 }
 
-#team-wrapper {
+.team-wrapper {
   @include flex-container(center, wrap);
   .team-member-card {
     background: rgba(77, 63, 75, .5);
